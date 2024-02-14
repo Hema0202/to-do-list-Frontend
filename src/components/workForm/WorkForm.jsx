@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
-import { TextField, Button } from "@ui/material";
-import addWorkApi from '../../api/work/addWorkApi';
+import { TextField, Button } from "@mui/material";
+import addWorkApi from '../../api/work/addWorkApi'
 import "./workForm.css";
 import { UserContext } from '../../main';
 

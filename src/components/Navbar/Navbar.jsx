@@ -1,10 +1,10 @@
-import React,{userContext} from 'react';
+import React,{useContext} from 'react';
 import './navbar.css';
 import {Link} from "react-router-dom";
-import {userContext} from '../../main'
+import {UserContext} from '../../main'
 
 export default function Navbar() {
-  const {state, actions} = useContext(userContext);
+  const {state, actions} = useContext(UserContext);
   return (
     <div className='navbar-container'>
       <ul>

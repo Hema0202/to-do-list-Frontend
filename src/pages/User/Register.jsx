@@ -12,18 +12,18 @@ export default function Register() {
   const [password,setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
 
-
   const navigate = useNavigate();
-
   const redirectToLogin = () => {
     navigate("/login");
   }
-
+ 
   const submitHandler = async () => {
+    console.log("hii3")
     if(password != confirm) {
       alert("Password and confirm password must be same");
       return;
     }
+    console.log("hii4")
     let res = await registerApi({
       name: name,
       email: email,

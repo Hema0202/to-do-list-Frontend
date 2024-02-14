@@ -16,3 +16,5 @@ async function addWorkApi(data, token){
         alert(error.message);
     }
 }
+
+export default addWorkApi;

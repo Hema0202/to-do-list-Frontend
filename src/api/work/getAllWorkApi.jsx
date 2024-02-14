@@ -1,6 +1,6 @@
 import axios from "axios";
 
-async function deleteWorkApi(token, id){
+async function getAllWorkApi(token, id){
     try {
         let res = await axios.get(import.meta.env.VITE_REACT_APP_API + "/work/getAll" + page, {
             headers:{
